@@ -1,0 +1,17 @@
+{
+  "name": "insurance-policy-claims-system-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "backend:dev": "npm run dev --prefix insurance-policy-claims-system/backend",
+    "backend:build": "npm run build --prefix insurance-policy-claims-system/backend",
+    "backend:lint": "npm run lint --prefix insurance-policy-claims-system/backend",
+    "backend:typecheck": "npm run typecheck --prefix insurance-policy-claims-system/backend",
+    "mobile:start": "npm run start --prefix insurance-policy-claims-system/mobile",
+    "mobile:lint": "npm run lint --prefix insurance-policy-claims-system/mobile",
+    "mobile:typecheck": "npm run typecheck --prefix insurance-policy-claims-system/mobile",
+    "lint": "npm run backend:lint && npm run mobile:lint",
+    "typecheck": "npm run backend:typecheck && npm run mobile:typecheck"
+  }
+}
+
